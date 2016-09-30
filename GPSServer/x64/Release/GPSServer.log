@@ -1,0 +1,24 @@
+﻿生成启动时间为 2016/9/8 16:43:08。
+     1>项目“D:\tao\C++\GPSServer\GPSServer\GPSServer.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“x64\Release\GPSServer.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         所有输出均为最新。
+         所有输出均为最新。
+       ResourceCompile:
+         所有输出均为最新。
+       Link:
+         D:\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\tao\C++\GPSServer\x64\Release\GPSServer.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:D:\tao\C++\GPSServer\lib Delayimp.lib /DELAYLOAD:libmysql.dll /MANIFEST /ManifestFile:"x64\Release\GPSServer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\tao\C++\GPSServer\x64\Release\GPSServer.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\tao\C++\GPSServer\x64\Release\GPSServer.lib" /MACHINE:X64 x64\Release\GPSServer.res
+         x64\Release\GPSServer.obj
+         x64\Release\GPSServerDlg.obj
+         x64\Release\stdafx.obj
+         x64\Release\webbrowser2.obj
+         x64\Release\WebPage.obj
+     1>GPSServerDlg.obj : error LNK2001: 无法解析的外部符号 mysql_init
+     1>GPSServerDlg.obj : error LNK2001: 无法解析的外部符号 mysql_real_connect
+     1>D:\tao\C++\GPSServer\x64\Release\GPSServer.exe : fatal error LNK1120: 2 个无法解析的外部命令
+     1>已完成生成项目“D:\tao\C++\GPSServer\GPSServer\GPSServer.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.90
