@@ -181,6 +181,7 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include="..\gps.ico" />
     <None Include="geodemo.html" />
     <None Include="ReadMe.txt" />
     <None Include="res\GPSServer.ico" />

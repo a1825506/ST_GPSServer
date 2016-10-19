@@ -13,13 +13,13 @@ public:
 	/************************************************************************/
 	/* 连接数据库操作                                                                     */
 	/************************************************************************/
-     bool ConnectDatabase(){
+     bool ConnectDatabase(CString username,CString password){
 		 try 
 		 {  
 			 mysql_init(&mysql);  //连接mysql，数据库
 
 			 //返回false则连接失败，返回true则连接成功
-			 if (!(mysql_real_connect(&mysql,"localhost", "root", "", "gps",0,NULL,0))) //中间分别是主机，用户名，密码，数据库名，端口号（可以写默认0或者3306等），可以先写成参数再传进去
+			 if (!(mysql_real_connect(&mysql,"localhost",username, password, "gps",0,NULL,0))) //中间分别是主机，用户名，密码，数据库名，端口号（可以写默认0或者3306等），可以先写成参数再传进去
 			 {
 				 ::SendMessage(AfxGetMainWnd()->m_hWnd,WM_STATUSINFO,0,(LPARAM)"数据库连接失败！");
 				 return FALSE;  
@@ -309,6 +309,24 @@ public:
 
 		 }
 
+	 }
+	 /************************************************************************/
+	 /* 删除轨迹数据                                                                     */
+	 /************************************************************************/
+	 void DeleteLocus(string diviceimei,string date){
+		
+		 CString sql;
+
+		 sql.Format(("delete  from locationdata where DiviceIMEI=%s and Date=%s"), diviceimei.c_str(),date.c_str());
+		 	
+		 if(mysql_query(&mysql, sql))        //执行SQL语句
+		 {
+	
+			 printf("删除数据失败");
+		 }else {
+		
+			 printf("删除数据成功");
+		 }
 	 }
 
 };

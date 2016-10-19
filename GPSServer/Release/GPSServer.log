@@ -1,20 +1,14 @@
-﻿生成启动时间为 2016/9/30 14:08:08。
-     1>项目“D:\tao\C++\GPSServer\GPSServer\GPSServer.vcxproj”在节点 2 上(build 个目标)。
+﻿生成启动时间为 2016/10/18 14:42:49。
+     1>项目“D:\tao\Github\ST_GPSServer\GPSServer\GPSServer.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
          正在创建“Release\GPSServer.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
          所有输出均为最新。
-         D:\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ID:\tao\C++\GPSServer\mysql_include /ID:\tao\C++\GPSServer\include /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\GPSServer.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GPSServerDlg.cpp
-         GPSServerDlg.cpp
-     1>d:\tao\c++\gpsserver\gpsserver\DBHelper.h(113): warning C4244: “初始化”: 从“my_ulonglong”转换到“int”，可能丢失数据
-     1>GPSServerDlg.cpp(415): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 D:\Microsoft Visual Studio 10.0\VC\include\string.h(105) : 参见“strcpy”的声明
-     1>GPSServerDlg.cpp(479): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 D:\Microsoft Visual Studio 10.0\VC\include\time.inl(112) : 参见“localtime”的声明
+         所有输出均为最新。
        ResourceCompile:
          所有输出均为最新。
        Link:
-         D:\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\tao\C++\GPSServer\Release\GPSServer.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:D:\tao\C++\GPSServer\lib libmysql.lib Delayimp.lib /DELAYLOAD:libmysql.dll /MANIFEST /ManifestFile:"Release\GPSServer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\tao\C++\GPSServer\Release\GPSServer.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\tao\C++\GPSServer\Release\GPSServer.lib" /MACHINE:X86 Release\GPSServer.res
+         D:\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\tao\Github\ST_GPSServer\Release\GPSServer.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:D:\tao\C++\GPSServer\lib libmysql.lib Delayimp.lib /DELAYLOAD:libmysql.dll /MANIFEST /ManifestFile:"Release\GPSServer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\tao\Github\ST_GPSServer\Release\GPSServer.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\tao\Github\ST_GPSServer\Release\GPSServer.lib" /MACHINE:X86 Release\GPSServer.res
          Release\GPSServer.obj
          Release\GPSServerDlg.obj
          Release\stdafx.obj
@@ -22,14 +16,14 @@
          Release\WebPage.obj
          正在生成代码
          已完成代码的生成
-         GPSServer.vcxproj -> D:\tao\C++\GPSServer\Release\GPSServer.exe
+         GPSServer.vcxproj -> D:\tao\Github\ST_GPSServer\Release\GPSServer.exe
        Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\tao\C++\GPSServer\Release\GPSServer.exe;#1" /manifest Release\GPSServer.exe.intermediate.manifest "D:\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\tao\Github\ST_GPSServer\Release\GPSServer.exe;#1" /manifest Release\GPSServer.exe.intermediate.manifest "D:\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
        FinalizeBuildStatus:
          正在删除文件“Release\GPSServer.unsuccessfulbuild”。
          正在对“Release\GPSServer.lastbuildstate”执行 Touch 任务。
-     1>已完成生成项目“D:\tao\C++\GPSServer\GPSServer\GPSServer.vcxproj”(build 个目标)的操作。
+     1>已完成生成项目“D:\tao\Github\ST_GPSServer\GPSServer\GPSServer.vcxproj”(build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:02.65
+已用时间 00:00:01.48

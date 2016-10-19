@@ -23,6 +23,9 @@
       <Filter>资源文件</Filter>
     </None>
     <None Include="geodemo.html" />
+    <None Include="..\gps.ico">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GPSServer.h">

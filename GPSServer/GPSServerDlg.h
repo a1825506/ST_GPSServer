@@ -19,13 +19,15 @@ UINT ThreadFunction_recv( LPVOID pParam);
 //线程同步用到的变量
 static CEvent hEvents_listen;
 static CEvent hEvents_accept;
+
+static bool isrunning;
 //保存连接上服务器的设备信息。
 static map<SOCKET,string> map_socket;
 //保存连接上服务器的手机控制端信息
 static map<SOCKET,string> STmap_socket;
 //定义一张转发表，用于主控端设备请求到指定设备的定位数据时，服务器返回给请求的主控端
 //使用multimap能实现多对多的关系。
-static multimap<SOCKET,SOCKET>Forwarding_map;
+static map<SOCKET,SOCKET>Forwarding_map;
 
 
 // CGPSServerDlg 对话框
@@ -57,6 +59,9 @@ protected:
 	afx_msg LRESULT dealwith_parammsg(WPARAM wParam,LPARAM lparam);
 	afx_msg LRESULT dealwith_deletemsg(WPARAM wParam,LPARAM lparam);
 	afx_msg LRESULT dealwith_sendmsg(WPARAM wParam,LPARAM lparam);
+	afx_msg LRESULT onShowTask(WPARAM wParam,LPARAM lParam);
+	afx_msg LRESULT dealwith_reboot(WPARAM wParam,LPARAM lparam);
+	afx_msg LRESULT dealwith_restart(WPARAM wParam,LPARAM lparam);
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
 public:
@@ -69,5 +74,18 @@ public:
 	CString    m_DiviceIMEI;
 	DBHelper* dbHelper;
 	CEdit mshowinfo;
+
+	CString    m_port;
+	CString    m_username;
+	CString    m_password;
+	int nport;
+	int tts;
+	int rebootnum;
+	CEdit musername;
+	CEdit mpassword;
+	CEdit mport;
+	afx_msg void OnTimer(UINT_PTR nIDEvent);
+	afx_msg  void OnBnClickedStart();
+	afx_msg void OnBnClickedRunSys();
 	 void dealwith_showmsg(string user,string show_msg);
 };

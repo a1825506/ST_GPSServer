@@ -15,6 +15,9 @@
 #define WM_DELETEINFO WM_USER+102
 #define WM_SENDINFO WM_USER+103
 #define WM_SHOWNFO WM_USER+104
+#define WM_REBOOTINFO WM_USER+105
+#define WM_RESTARTINFO WM_USER+106
+#define WM_SHOWTASK (WM_USER +105)
 
 #ifndef VC_EXTRALEAN
 #define VC_EXTRALEAN            // 从 Windows 头中排除极少使用的资料
